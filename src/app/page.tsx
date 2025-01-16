@@ -1,6 +1,11 @@
 // src/app/page.tsx
-import LandingPage from '@/components/LandingPage'
+// import LandingPage from '@/components/LandingPage'
 import { Metadata } from 'next'
+import { Hero2 } from '@/components/sections/Hero2'
+import { InformationSection } from '@/components/sections/InformationSection'
+import { FeatureBadges } from '@/components/sections/FeatureBadges'
+import { CasualBadges } from '@/components/sections/CasualBadges'
+
 
 export const metadata: Metadata = {
   title: 'Zyro - Your Home in Hyderabad',
@@ -19,6 +24,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <LandingPage />
+    <div>
+    <Hero2 />
+    <FeatureBadges />
+    <InformationSection />
+    <CasualBadges />
+    </div>
   )
 }
